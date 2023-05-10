@@ -71,9 +71,15 @@ namespace DovizKuru
         {
             string hata="";
             tarih = txtTarih.Text; //Form1'in açılışına yazdığımız için tarihi değiştirsek bile eski tarihteki kurları getirmeyip Formun ilk açıldığı tarihi almaması için butona her basıldığında aktif tarihi alması için burada tekrar ettik
+<<<<<<< HEAD
             ay = tarih.Substring(3, 2); //tcmb'nin xml sayfasına kullanmak için tarih textboxundaki AY alanını bir değişkene atıyoruz
             yil = tarih.Substring(6, 4); //tcmb'nin xml sayfasına kullanmak için tarih textboxundaki YIL alanını bir değişkene atıyoruz
             tarih2 = tarih.Replace('.'.ToString(), ""); //geçmişe dönük kurları çekeceğimizde tarih formatının 10052023 şeklinde olması gerektiği için önce . karakterini stringe dönüştürüp daha sonra .'yı aradan siliyoruz.
+=======
+            ay = tarih.Substring(3, 2);
+            yil = tarih.Substring(6, 4);
+            tarih2 = tarih.Replace('.'.ToString(), "");
+>>>>>>> c8d29b3178534fd81611bbeb5aa795247de6107f
 
             string dugum = comboTCMBDovIsmi.Text; //Form1'in açılışında comboBox'un içerisine çektiğimiz Currency/Kod düğümündeki döviz isimlerini seçilen kurun çekilmesi için dugum değişkeninin içerisine atıyoruz
             var belge = new XmlDocument(); //XMLDocument sınıfında bir değişken oluşturduk
